@@ -1,0 +1,48 @@
+---
+// src/components/Navbar.astro
+import "../styles/global.css";
+---
+
+<nav
+    class="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md md:top-6 md:rounded-2xl lg:max-w-screen-lg py-2 box-content bg-verde-perto p-5 border-preto-paia border-b-8"
+>
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="text-white font-bold text-xl">
+            <a href="/" class="text-white hover:text-rosa-bebe">kizuki_oki</a>
+        </div>
+        <div class="hidden md:flex space-x-4 gap-1">
+            <a href="/" class="nav-button lg:inline md:hidden">Home</a>
+            <a href="/about" class="nav-button"> Sobre </a>
+            <a href="/portifolio" class="nav-button">Portifólio</a>
+            <a href="/commissions" class="nav-button">Comissions</a>
+            <a href="/links" class="nav-button">Contato</a>
+        </div>
+        <div class="md:hidden">
+            <button class="text-blue-500 hover:text-blue-700">
+                <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<style>
+    @import "../styles/global.css";
+    a {
+        font-family: "OpenDyslexic";
+    }
+    a.nav-button {
+        @apply bg-amber-50 p-2 border-2 border-b-5 rounded-b-2xl rounded-t border-preto-paia text-preto-paia hover:bg-lilas-legal hover:text-white;
+    }
+</style>

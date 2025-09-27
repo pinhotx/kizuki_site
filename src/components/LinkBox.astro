@@ -1,0 +1,29 @@
+---
+// src/components/LinkBox.astro
+import "../styles/global.css";
+import kizukiEmote from "../assets/kizuki_emote_oi.png";
+---
+
+<div
+    class="bg-rosa-bebe mx-auto top-30 relative p-10 box-content content-center hover:-rotate-1 w-full max-w-xs overflow-hidden rounded-lg border border-slate-200 shadow-lg shadow-slate-950/5"
+>
+    <img
+        class="mx-autom-1.5 h-max w-[calc(100%-12px)]"
+        src={kizukiEmote.src}
+        alt="profile-picture"
+    />
+
+    <div class="h-max w-full rounded px-3 py-2 text-center">
+        <h5
+            class="dyslexic-text font-sans text-lg font-bold text-current antialiased md:text-xl lg:text-2xl"
+        >
+            Kizuki Oki
+        </h5>
+
+        <p
+            class="dyslexic-text my-1 font-sans text-base text-slate-600 antialiased"
+        >
+            Artista Digital e VTuber
+        </p>
+    </div>
+</div>

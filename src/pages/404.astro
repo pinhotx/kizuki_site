@@ -1,0 +1,36 @@
+---
+import Hauhauhau from "../components/hauhauhau.astro";
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/LayoutNoHeader.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+    <main
+        class="grid min-h-full place-items-center bg-preto-paia px-6 py-24 sm:py-32 lg:px-8"
+    >
+        <div class="text-center">
+            <p class="text-base font-semibold text-azul-nuvem">404</p>
+            <h1
+                class="mt-4 text-5xl font-semibold tracking-tight text-balance text-rosa-bebe sm:text-7xl"
+            >
+                Onde é que eu to?
+            </h1>
+            <p
+                class="mt-6 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8"
+            >
+                Parece que você se perdeu. A página que está procurando não foi
+                encontrada.
+            </p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a
+                    href="/"
+                    class="rounded-md bg-verde-perto px-3.5 py-2.5 text-sm font-semibold text-preto-paia shadow-xs hover:bg-azul-nuvem focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                    >Voltar para o início</a
+                >
+            </div>
+        </div>
+    </main>
+</Layout>

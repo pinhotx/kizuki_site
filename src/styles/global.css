@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "./theme.css";
+
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+    font-family: "OpenDyslexic";
+    src: url("/fonts/OpenDyslexic-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.dyslexic-text {
+    font-family: "OpenDyslexic";
+}
